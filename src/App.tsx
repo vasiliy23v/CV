@@ -1,6 +1,5 @@
 import './App.scss'
 import { Button } from './components'
-import background from './assets/BackGround1.png'
 import image1 from './assets/Image 3.png'
 import image2 from './assets/Image 4.png'
 import { motion } from "framer-motion"
