@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav {
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%;
   padding: 8px 24px;
@@ -41,10 +42,12 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .header {
+  position: relative;
 background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.00) 102.06%), url('./assets/BackGround1.jpg'), lightgray 50% / cover no-repeat;
   height: 100vh;
   background-repeat: no-repeat;
@@ -55,8 +58,10 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.00) 10
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 120px ;
+  // padding: 0 120px ;
+  
   &-text {
+    width: 100%;
     h1 {
       font-size: 96px;
       font-style: normal;
@@ -176,3 +181,121 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.00) 10
   height: 200vh;
 }
 
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+    &, &:hover, &:active, &:focus {
+      border: none;
+    }
+}
+
+#myBtn {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0px;
+  background: transparent;
+  color: transparent;
+  border: transparent 0px solid;
+  &.visible{
+    background-image: url('./assets/play.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+
+
+
+
+body {
+  position: relative;
+  height: 100vh;
+}
+        
+.wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  &.transperent div{
+    background: transparent;
+  }
+}
+
+.video-main {
+  position: relative;
+  display: inline-block;
+}
+
+.video {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  background: #000000;
+  z-index: 999;
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+.fa-play:before {
+  content: "\f04b";
+}
+
+.waves {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  border-radius: 100%;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+   -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
+}
+        
+.wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
