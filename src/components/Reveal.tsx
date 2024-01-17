@@ -20,6 +20,7 @@ export const Reveal = ({ children, width = "fit-content" }: RevealProps) => {
     return (
         <div ref={ref} style={{ overflow: 'hidden' }}>
             <motion.div
+                style={{ width }}
                 variants={{
                     hidden: { opacity: 0, y: 75 },
                     visible: { opacity: 1, y: 0 },
