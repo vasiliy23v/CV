@@ -4,6 +4,7 @@ import image1 from './assets/Image 3.png'
 import image2 from './assets/Image 4.png'
 import preview from './assets/preview.jpg'
 import scroll from './assets/gif.gif'
+import cv from './assets/CV_eng.pdf'
 import promo from './assets/PROMO1.mp4'
 import { useState } from 'react'
 
@@ -32,7 +33,6 @@ function App() {
 
   return (
     <>
-
       <nav className="nav" style={{ display: showNavigation ? 'block' : 'none' }}>
         <Reveal>
           <div className='block'>
@@ -40,15 +40,16 @@ function App() {
               PORTFOLIO
             </div>
             <ul className="nav-links">
-              <li>About</li>
-              <li>Experience</li>
-              <li>Works</li>
-              <li>Blog</li>
+              <a href='#h1_0'><li>About</li></a>
+              <a href='#h1_1'><li>Experience</li></a>
+              <a href='#h1_2'><li>Skills</li></a>
+              <a href='#h1_3'><li>Projects</li></a>
+              <a href='#h1_4'><li>Testimonials</li></a>
             </ul>
           </div>
         </Reveal>
       </nav >
-      <header className="header">
+      <header className="header" id="h1_0">
         <video autoPlay id="myVideo" poster={preview} onEnded={handleVideoEnd} >
           <source src={promo} type="video/mp4" />
         </video>
@@ -75,7 +76,7 @@ function App() {
         {/* <div id="myBtn" onClick={togglePlayPause} className={isPaused ? 'transperent' : 'visible'} /> */}
         <div style={{ display: showNavigation ? 'flex' : 'none', position: 'absolute', bottom: '50px', height: "100px", width: '100%', justifyContent: 'center' }}>
           <div>
-            <img src={scroll} alt="Scroll down" style={{ height: "100px" }} />
+            <img src={scroll} alt="Scroll down" style={{ height: "50px" }} />
           </div>
         </div>
         {/* <div className="header-text container">
@@ -96,7 +97,7 @@ function App() {
 
       <div className="container">
         <Reveal>
-          <section className="title-section">
+          <section className="title-section" id="h1_1">
             <h1>Experience</h1>
           </section>
         </Reveal>
@@ -116,7 +117,7 @@ function App() {
           <div className="hr"></div>
         </Reveal>
         <Reveal>
-          <section className="title-section">
+          <section className="title-section" id="h1_2">
             <h1>Skills</h1>
           </section>
         </Reveal>
@@ -150,7 +151,7 @@ function App() {
         </Reveal>
         <Reveal>
 
-          <section className="title-section">
+          <section className="title-section" id="h1_3">
             <h1>Projects</h1>
           </section>
         </Reveal>
@@ -180,7 +181,7 @@ function App() {
         </Reveal>
         <Reveal>
 
-          <section className="title-section" style={{ padding: '140px 0 100px 0' }}>
+          <section className="title-section" id="h1_4" style={{ padding: '140px 0 100px 0' }}>
             <h1>Testimonials</h1>
           </section>
         </Reveal>
@@ -237,13 +238,13 @@ function App() {
           <footer className='footer'>
             <h5>Vasiliy Shevchuk</h5>
             <div>
-              <a href="">Linkedin</a>
-              <a href="">Github</a>
-              <a href="">CV</a>
+              <a href="https://www.linkedin.com/in/vasiliy-shevchuk-24b0b0177/" target='_blank'>Linkedin</a>
+              <a href="https://github.com/vasiliy23v" target='_blank'>Github</a>
+              <a href={cv} target='_blank'>Download CV</a>
             </div>
           </footer>
         </Reveal>
-      </div >
+      </div>
     </>
   )
 }

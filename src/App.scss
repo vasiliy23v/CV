@@ -27,9 +27,16 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   border-bottom: #E9E9E7 solid 1px;
   &-links {
+    a {
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        color: #787673;
+      }
+    }
+    list-style-type: none;
     display: flex;
     gap: 55px;
-    list-style-type: none;
   }
   &-logo {
     font-size: 24px;
@@ -298,4 +305,30 @@ body {
 .wave-3 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+}
+
+
+
+/* A grid of boxes */
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  justify-self: center;
+}
+
+/* An emoji box */
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 30vw;
+  max-height: 250px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
 }
