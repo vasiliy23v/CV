@@ -4,7 +4,7 @@ import image1 from './assets/Image 3.png'
 import image2 from './assets/Image 4.png'
 import preview from './assets/preview.jpg'
 import scroll from './assets/gif.gif'
-import cv from './assets/CV_eng.pdf'
+// import cv from './assets/CV_eng.pdf'
 import promo from './assets/PROMO1.mp4'
 import { useState } from 'react'
 
@@ -258,7 +258,7 @@ function App() {
             <div>
               <a href="https://www.linkedin.com/in/vasiliy-shevchuk-24b0b0177/" target='_blank'>Linkedin</a>
               <a href="https://github.com/vasiliy23v" target='_blank'>Github</a>
-              <a href={cv} target='_blank'>Download CV</a>
+              <a href="/" target='_blank'>Download CV</a>
             </div>
           </footer>
         </Reveal>
