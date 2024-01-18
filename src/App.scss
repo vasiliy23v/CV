@@ -346,6 +346,25 @@ body {
   justify-content: center;
   font-size: 36px;
 }
+@media only screen and (max-width: 1500px) {
+  .header {
+    height: 900px;
+  }
+  #myVideo {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header {
+    height: 600px;
+  }
+  #myVideo {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .text-section {
@@ -366,9 +385,6 @@ body {
   }
   .header {
     height: 400px;
-  }
-  #myVideo {
-    width: 100%;
   }
   .nav {
     display: block !important;
