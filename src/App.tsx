@@ -181,7 +181,7 @@ function App() {
         </Reveal>
         <Reveal>
 
-          <section className="title-section" id="h1_4" style={{ padding: '140px 0 100px 0' }}>
+          <section className="title-section" id="h1_4">
             <h1>Testimonials</h1>
           </section>
         </Reveal>
