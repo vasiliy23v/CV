@@ -29,6 +29,18 @@ function App() {
     setShowNavigation(true)
     console.log("handleVideoEnd", showNavigation, isPaused)
   }
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links') as HTMLElement | null
+    const burgerMenu = document.querySelector('.burger-menu') as HTMLElement | null
+
+    if (navLinks && burgerMenu) {
+      navLinks.classList.toggle('active')
+      burgerMenu.classList.toggle('active') // Add or remove 'active' class on the burger menu
+      console.log('Toggle menu executed')
+    }
+  }
+
+
 
 
   return (
@@ -39,14 +51,20 @@ function App() {
             <div className="nav-logo">
               PORTFOLIO
             </div>
-            <ul className="nav-links">
-              <a href='#h1_0'><li>About</li></a>
-              <a href='#h1_1'><li>Experience</li></a>
-              <a href='#h1_2'><li>Skills</li></a>
-              <a href='#h1_3'><li>Projects</li></a>
-              <a href='#h1_4'><li>Testimonials</li></a>
+            <div className="burger-menu" onClick={toggleMenu}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
+            <ul className="nav-links active">
+              <a href='#h1_0' onClick={toggleMenu}><li>About</li></a>
+              <a href='#h1_1' onClick={toggleMenu}><li>Experience</li></a>
+              <a href='#h1_2' onClick={toggleMenu}><li>Skills</li></a>
+              <a href='#h1_3' onClick={toggleMenu}><li>Projects</li></a>
+              <a href='#h1_4' onClick={toggleMenu}><li>Testimonials</li></a>
             </ul>
           </div>
+
         </Reveal>
       </nav >
       <header className="header" id="h1_0">
