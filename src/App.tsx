@@ -1,7 +1,7 @@
 import './App.scss'
 import { Button, Reveal } from './components'
 import image1 from './assets/Image 3.png'
-import image2 from './assets/Image 4.png'
+import image2 from './assets/spotify-mockup.jpg'
 import preview from './assets/preview.jpg'
 import scroll from './assets/gif.gif'
 // import cv from './assets/CV_eng.pdf'
@@ -182,8 +182,8 @@ function App() {
               <img src={image1} alt="Project image" />
             </div>
             <h3>Netflix Clone</h3>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future. what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future.<br /> what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
+            <p>Full Stack Netflix Clone in React, Tailwind CSS, Next.JS, Prisma, MongoDB, NextAuth & Vercel </p>
+            <p>(2023)</p>
             <Button title='title' link='link' />
           </section>
         </Reveal>
@@ -194,8 +194,8 @@ function App() {
               <img src={image2} alt="Project image" />
             </div>
             <h3>Twitch Clone</h3>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future. what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future.<br /> what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
+            <p>Full Stack Spotify Clone: Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind </p>
+            <p>(2023)</p>
             <Button title='title' link='link' />
           </section>
         </Reveal>
