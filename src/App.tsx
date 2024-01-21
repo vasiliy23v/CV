@@ -5,7 +5,7 @@ import image2 from './assets/Image 4.png'
 import preview from './assets/preview.jpg'
 import scroll from './assets/gif.gif'
 // import cv from './assets/CV_eng.pdf'
-import promo from './assets/PROMO1.mp4'
+import promo from './assets/Comp 1_3.mp4'
 import { useState } from 'react'
 
 function App() {
