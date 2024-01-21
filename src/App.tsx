@@ -122,13 +122,15 @@ function App() {
         <Reveal>
           <section className="text-section">
             <h3>CHI SOFTWARE</h3>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future. what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
+            <p>
+              <strong>August 2022 - September 2023</strong><br /><br />In the role of lead developer for the Medical Clinic and IT Company web applications, my responsibilities encompassed requirements analysis, architecture design, and user interface implementation using technologies like React.js and Material UI. I ensured efficient state management, conducted rigorous testing, and implemented server-side functionalities for optimal performance. Additionally, for the IT Company project, I focused on form validation, responsive design, and integrated features to enhance client acquisition and overall user experience.
+            </p>
           </section>
         </Reveal>
         <Reveal>
           <section className="text-section">
-            <h3>CHI SOFTWARE</h3>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future. what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
+            <h3>DEUYCH MEDICAL</h3>
+            <p><strong>September 2023 - Current</strong><br /><br />As an experienced web developer, I specialise in creating intuitive user interfaces and functionality for web applications. My responsibilities include developing CRM systems for medical clinics and web platforms for IT companies using advanced technologies such as React.js, TypeScript, Redux Toolkit and Docker. I constantly strive to optimise processes, including data management, and improve user experience to create efficient and user-friendly web systems.</p>
           </section>
         </Reveal>
         <Reveal>
@@ -218,14 +220,14 @@ function App() {
         <Reveal>
           <section className="text-section">
             <h3>Middle Front-end Developer<br />2023 -  Current</h3>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future. what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
+            <p>As a Middle Front-end Developer, I additionally took continuing education courses to deepen my skills and stay up-to-date with current trends in web development.</p>
           </section>
         </Reveal>
         <Reveal>
           <section className="text-section">
             <h3>Junior Front-end Developer<br />
               2022</h3>
-            <p>New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future. what's shown below, plus everything that will be added in the future.what's shown below, plus everything that will be added in the future.</p>
+            <p>After successfully completing a web development course in 2022, where I actively learnt React and implemented my own projects, I continue to work, deepening my skills, putting them into practice and actively participating in web development processes.</p>
           </section>
         </Reveal>
         <Reveal>
