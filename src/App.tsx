@@ -74,25 +74,31 @@ function App() {
         <video autoPlay id="myVideo" poster={preview} onEnded={handleVideoEnd} >
           <source src={promo} type="video/mp4" />
         </video>
-        <div onClick={togglePlayPause} className={isPaused ? 'wrapper transperent' : 'wrapper visible'} >
-          <div className="video-main">
-            <div className="promo-video">
-              <div className="waves-block">
-                <div className="waves wave-1"></div>
-                <div className="waves wave-2"></div>
-                <div className="waves wave-3"></div>
+
+        <div onClick={togglePlayPause} className={!isPaused ? 'wrapper transperent' : 'wrapper visible'} >
+          {
+            isPaused &&
+            <div className="video-main">
+              <div className="promo-video">
+                <div className="waves-block">
+                  <div className="waves wave-1"></div>
+                  <div className="waves wave-2"></div>
+                  <div className="waves wave-3"></div>
+                </div>
               </div>
-            </div>
-            {!isPaused && <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-              width="40px" height="40px" viewBox="0 0 96.155 96.155"
-            >
-              <g>
-                <path d="M20.972,95.594l57.605-45.951c0.951-0.76,0.951-2.367,0-3.127L20.968,0.56c-0.689-0.547-1.716-0.709-2.61-0.414
+
+              <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                width="40px" height="40px" viewBox="0 0 96.155 96.155"
+              >
+                <g>
+                  <path d="M20.972,95.594l57.605-45.951c0.951-0.76,0.951-2.367,0-3.127L20.968,0.56c-0.689-0.547-1.716-0.709-2.61-0.414
 		c-0.186,0.061-0.33,0.129-0.436,0.186c-0.65,0.35-1.056,1.025-1.056,1.764v91.967c0,0.736,0.405,1.414,1.056,1.762
 		c0.109,0.06,0.253,0.127,0.426,0.185C19.251,96.305,20.281,96.144,20.972,95.594z"/>
-              </g>
-            </svg>}
-          </div>
+                </g>
+              </svg>
+
+            </div>
+          }
         </div>
         {/* <div id="myBtn" onClick={togglePlayPause} className={isPaused ? 'transperent' : 'visible'} /> */}
         <div style={{ display: showNavigation ? 'flex' : 'none', position: 'absolute', bottom: '50px', height: "100px", width: '100%', justifyContent: 'center' }}>
