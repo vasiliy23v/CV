@@ -9,18 +9,21 @@ import promo from './assets/Comp 1_3.mp4'
 import { useState } from 'react'
 
 function App() {
-  const [isPaused, setIsPaused] = useState(false)
+  const [isPaused, setIsPaused] = useState(true)
   const [showNavigation, setShowNavigation] = useState(true)
 
   const togglePlayPause = () => {
     const video = document.getElementById("myVideo") as HTMLVideoElement
-    if (video.paused) {
+
+    if (video.paused || video.ended) {
       video.play()
     } else {
       video.pause()
     }
-    setIsPaused(!isPaused)
-    setShowNavigation(false)
+
+    setIsPaused((prevIsPaused) => !prevIsPaused)
+    setShowNavigation((prevShowNavigation) => !prevShowNavigation)
+
     console.log("togglePlayPause", showNavigation, isPaused)
   }
 
@@ -184,7 +187,7 @@ function App() {
             <h3>Netflix Clone</h3>
             <p>Full Stack Netflix Clone in React, Tailwind CSS, Next.JS, Prisma, MongoDB, NextAuth & Vercel </p>
             <p>(2023)</p>
-            <Button title='title' link='link' />
+            <Button title='Visit' link='https://netflix-clone-v-shef.vercel.app/auth' />
           </section>
         </Reveal>
         <Reveal>
